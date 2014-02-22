@@ -227,8 +227,8 @@ yum -y upgrade
 yum -y install ld-linux.so.2 libbz2.so.1 libdb-4.7.so libgd.so.2 httpd php php-suhosin php-devel php-gd php-mbstring php-mcrypt php-intl php-imap php-mysql php-xml php-xmlrpc curl curl-devel perl-libwww-perl libxml2 libxml2-devel mysql-server zip webalizer gcc gcc-c++ httpd-devel at make mysql-devel bzip2-devel postfix postfix-perl-scripts bash-completion dovecot dovecot-mysql dovecot-pigeonhole mysql-server proftpd proftpd-mysql bind bind-utils bind-libs
 
 # Generation of random passwords
-password=`passwordgen`;
-postfixpassword=`passwordgen`;
+password='LgAnhujp89Ud';
+postfixpassword='bGr5b8cHHfPC';
 zadminNewPass=`passwordgen`;
 
 # Set-up ZPanel directories and configure directory permissions as required.
@@ -449,3 +449,8 @@ read -e -p "Restart your server now to complete the install (y/n)? " rsn
 	esac
 done
 shutdown -r now
+
+
+#rm -rf /usr/bin/zppy
+#rm -rf /usr/bin/setso
+#rm -rf /usr/bin/setzadmin
